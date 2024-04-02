@@ -14,3 +14,9 @@ body {
     text-align: left;
     font-size: 32px;
 }
+
+.resourceName { 
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
