@@ -1,10 +1,14 @@
+:root {
+    --Grey: #564946ff;
+    
+}
 
 body {
     background-color: #564946ff;
 }
 
 .title { 
-    color: white;
+    color: #49D49Dff;
     text-align: center;
     font-size: 48px;
     
@@ -12,12 +16,12 @@ body {
 }
 
 .businessName {
-    color: white;
+    color: #49D49D;
     text-align: left;
     font-size: 32px;
 }
 
-.resourceName { 
+h3.product { 
     color: white;
     text-align: left;
     font-size: 20px;
