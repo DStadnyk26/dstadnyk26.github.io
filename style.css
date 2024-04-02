@@ -5,6 +5,8 @@
     --violet: #800080;
     
     --bright-green: #66FF00;
+    
+    --bright-blue: #00B9E8;
 }
 
 body {
@@ -25,20 +27,8 @@ body {
     font-size: 32px;
 }
 
-h3.product { 
-    color: white;
-    text-align: left;
-    font-size: 20px;
-}
-
-h3.supplies { 
-    color: white;
-    text-align: left;
-    font-size: 20px;
-}
-
-h3.research { 
-    color: white;
+.resourceName { 
+    color: var(--violet);
     text-align: left;
     font-size: 20px;
 }
