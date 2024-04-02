@@ -1,10 +1,10 @@
 :root {
-    --Grey: #564946ff;
+    --grey: #564946ff;
     
 }
 
 body {
-    background-color: #564946ff;
+    background-color: var(--grey);
 }
 
 .title { 
