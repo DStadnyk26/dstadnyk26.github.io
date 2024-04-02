@@ -1,4 +1,9 @@
+
+body {
+    background-color: lightgrey;
+}
+
 .title { 
-    color: red;
+    color: white;
     text-align: center;
 }
