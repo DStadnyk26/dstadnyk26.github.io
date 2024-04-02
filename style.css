@@ -1,6 +1,6 @@
 :root {
     --grey: #564946ff;
-    
+    --red-violet: #C71585;
 }
 
 body {
@@ -8,7 +8,7 @@ body {
 }
 
 .title { 
-    color: #49D49Dff;
+    color: var(--red-violet);
     text-align: center;
     font-size: 48px;
     
@@ -16,7 +16,7 @@ body {
 }
 
 .businessName {
-    color: #49D49D;
+    color: var(--red-violet);
     text-align: left;
     font-size: 32px;
 }
