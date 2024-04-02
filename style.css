@@ -1,12 +1,14 @@
 
 body {
-    background-color: lightgrey;
+    background-color: darkgrey;
 }
 
 .title { 
     color: white;
     text-align: center;
     font-size: 48px;
+    
+    height: 24px;
 }
 
 .businessName {
