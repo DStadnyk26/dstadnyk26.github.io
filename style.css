@@ -1,11 +1,6 @@
 :root {
     --grey: #474747;
-    
-    --red-violet: #C71585;
-    --violet: #800080;
-    
     --bright-green: #66FF00;
-    
     --bright-blue: #00B9E8;
 }
 
@@ -16,8 +11,8 @@ body {
 #header {
     border-bottom-style: solid;
     border-width: 2px;
-    border-color: lightgrey;
-    height: 75px;
+    border-color: white;
+    height: 38px;
     width: 100%;
 }
 
@@ -26,7 +21,7 @@ body {
 }
 
 .title { 
-    color: var(--red-violet);
+    color: white;
     text-align: center;
     font-size: 24px;
     
@@ -34,13 +29,13 @@ body {
 }
 
 .businessName {
-    color: var(--red-violet);
+    color: white;
     text-align: left;
     font-size: 32px;
 }
 
 .resourceName { 
-    color: var(--violet);
+    color: lightgrey;
     text-align: left;
     font-size: 20px;
 }
