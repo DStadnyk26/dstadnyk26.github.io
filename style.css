@@ -1,5 +1,5 @@
 :root {
-    --grey: #564946ff;
+    --grey: #474747;
     
     --red-violet: #C71585;
     --violet: #800080;
@@ -28,7 +28,7 @@ body {
 .title { 
     color: var(--red-violet);
     text-align: center;
-    font-size: 48px;
+    font-size: 24px;
     
     height: 24px;
 }
