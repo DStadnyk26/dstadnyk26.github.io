@@ -113,35 +113,74 @@ export let userInfo = {
     },
 }
 
-function cashProduce {
+function cashProduce() {
     const x = userInfo.cash;
     if(!running || !x.owned || x.supplies <= 0 || x.product >= x.productMax) return;
     x.product ++;
 }
 
-function cashConsume {
+function cashConsume() {
     const x = userInfo.cash;
     if(!running || x.owned || x.supplies <= 0 || x.product >= x.productMax) return;
 }
 
-function cashSell {
+function cashSell() {
     const x = userInfo.cash;
     x.product = 0;
 }
 
-function cashSupply {
+function cashSupply() {
     const x = userInfo.cash;
     x.supplies = x.suppliesMax
 }
 
-function cashUpdate {
+function cashUpdate() {
     const x = userInfo.cash;
     
     //Production Rate
     if(x.upgrades.equipment && x.upgrades.staff) {
-        
+        cashSpeed = 8 * 60 * 1000;
+    } else if (x.upgrades.equipment) {
+        cashSpeed = 10 * 60 * 1000;
+    } else if (x.uogrades.staff) {
+        cashSpeed = 10 * 60 * 1000;
     }
+        
+}
+
+function forgeryProduce() {
+    const x = userInfo.forgery;
+    if(!running || !x.owned || x.supplies <= 0 || x.product >= x.productMax) return;
+    x.product ++;
+}
+
+function forgeryConsume() {
+    const x = userInfo.forgery;
+    if(!running || x.owned || x.supplies <= 0 || x.product >= x.productMax) return;
+}
+
+function forgerySell() {
+    const x = userInfo.forgery;
+    x.product = 0;
+}
+
+function forgerySupply() {
+    const x = userInfo.forgery;
+    x.supplies = x.suppliesMax
+}
+
+function forgeryUpdate() {
+    const x = userInfo.forgery;
     
+    //Production Rate
+    if(x.upgrades.equipment && x.upgrades.staff) {
+        forgerySpeed = 3 * 60 * 1000;
+    } else if (x.upgrades.equipment) {
+        forgerySpeed = 4 * 60 * 1000;
+    } else if (x.uogrades.staff) {
+        forgerySpeed = 4 * 60 * 1000;
+    }
+        
 }
 
 function bikerUpdate(const path) {
