@@ -1,7 +1,13 @@
 let running = false;
 
-function draw() {
-    while (running == true) {
-        if
-    }
+while (running) {
+
+}
+
+function start(){
+    running = true;
+}
+
+function stop(){
+    running = false
 }
