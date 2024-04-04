@@ -121,7 +121,7 @@ function cashProduce() {
 
 function cashConsume() {
     const x = userInfo.cash;
-    if(!running || x.owned || x.supplies <= 0 || x.product >= x.productMax) return;
+    if(!running || !x.owned || x.supplies <= 0 || x.product >= x.productMax) return;
 }
 
 function cashSell() {
