@@ -18,6 +18,8 @@ export let userInfo = {
         researchMax: 60,
         supplies: 0,
         suppliesMax: 100,
+        suppliesPerProduct: 1,
+        suppliesPerResearch: 1,
         upgrades: {
             equipment: false,
             staff: false,
@@ -35,6 +37,7 @@ export let userInfo = {
         productMax: 20,
         supplies: 0,
         suppliesMax: 100,
+        suppliesPerProduct: 1,
         upgrades: {
             equipment: false,
             staff: false,
@@ -48,6 +51,7 @@ export let userInfo = {
         productMax: 50,
         supplies: 0,
         suppliesMax: 100,
+        suppliesPerProduct: 1,
         upgrades: {
             equipment: false,
             staff: false,
@@ -61,6 +65,7 @@ export let userInfo = {
         productMax: 36,
         supplies: 0,
         suppliesMax: 100,
+        suppliesPerProduct: 1,
         upgrades: {
             equipment: false,
             staff: false,
@@ -74,6 +79,7 @@ export let userInfo = {
         productMax: 8,
         supplies: 0,
         suppliesMax: 100,
+        suppliesPerProduct: 1,
         upgrades: {
             equipment: false,
             staff: false,
@@ -87,6 +93,7 @@ export let userInfo = {
         productMax: 4,
         supplies: 0,
         suppliesMax: 100,
+        suppliesPerProduct: 24,
         upgrades: {
             equipment: false,
             staff: false,
