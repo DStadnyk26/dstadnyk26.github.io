@@ -1,12 +1,23 @@
 let running = false;
 
-let cashSpeed = 1 * 60 * 1000);
-let forgerySpeed = 1 * 60 * 1000);
-let weedSpeed = 1 * 60 * 1000);
-let methSpeed = 1 * 60 * 1000);
-let cokeSpeed = 1 * 60 * 1000);
+let cashSpeed = 12 * 60 * 1000);
+let cashDrain = 1.6 * 60 * 100);
+
+let forgerySpeed = 5 * 60 * 1000);
+let forgeryDrain = 1.5 * 60 * 1000);
+
+let weedSpeed = 6 * 60 * 1000);
+let weedDrain = 2 * 60 * 1000);
+
+let methSpeed = 30 * 60 * 1000);
+let methDrain = 1.5 * 60 * 1000)
+
+let cokeSpeed = 50 * 60 * 1000);
+let cokeDrain = 1.2 * 60 * 1000);
+
 let acidSpeed = 1 * 60 * 1000);
-let bunkerSpeed = 5 * 60 * 1000);
+
+let bunkerSpeed = 10 * 60 * 1000);
 
 export let userInfo = {
     
@@ -101,8 +112,40 @@ export let userInfo = {
         },
     },
 }
+
+function cashProduce {
+    const x = userInfo.cash;
+    if(!running || !x.owned || x.supplies <= 0 || x.product >= x.productMax) return;
+    x.product ++;
+}
+
+function cashConsume {
+    const x = userInfo.cash;
+    if(!running || x.owned || x.supplies <= 0 || x.product >= x.productMax) return;
+}
+
+function cashSell {
+    const x = userInfo.cash;
+    x.product = 0;
+}
+
+function cashSupply {
+    const x = userInfo.cash;
+    x.supplies = x.suppliesMax
+}
+
+function cashUpdate {
+    const x = userInfo.cash;
+    
+    //Production Rate
+    if(x.upgrades.equipment && x.upgrades.staff) {
+        
+    }
+    
+}
+
 function bikerUpdate(const path) {
-    if (!running || path.owned || path.supplies <= 0 || path.product == path.productMax) return;
+    if (!running || !path.owned || path.supplies <= 0 || path.product == path.productMax) return;
     
     path.product ++;
     path.supplies --;
