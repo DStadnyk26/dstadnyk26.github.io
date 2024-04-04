@@ -50,7 +50,7 @@ function bunkerUpdate() {
                 } else if(path.producing.product == false && path.producing.research == true) {
                     if(path.research < path.researchMax) {
                         path.research += 1;
-                        path.supplies -= 1:
+                        path.supplies -= 1;
                     }
                 }
             }
