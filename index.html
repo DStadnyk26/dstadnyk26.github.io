@@ -1,32 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <title>SiteCore</title>
-	
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container" id="header">
-    	<h1 id="title">SiteCore</h1>
-    	
-        <div class="dropdown-heading">
-            <h2>Services</h2>
-        </div>
+
+<header>
+    <h1>Biker Business Tracker</h1>
+</header>
+
+<div class="banner">
+    <img src="banner-image.jpg" alt="Banner" style="width:100%; height:auto;">
+    <button id="pauseBtn" onclick="togglePauseStart()">Pause</button>
+    <button id="settingsBtn" onclick="openSettings()">Settings</button>
+</div>
+
+<section class="dropdown-container">
+    <div class="dropdown" id="forgery">
         
-        <div class="dropdown-heading">
-            <h2>About Me</h2>
-        </div>
-        
-        <div class="dropdown-heading">
-            <h2>Contact Me</h2>
+        <div class="dropdown-content" id="forgery-content">
+            <p>Document Forgery</p>
+            <div class="progress-container">
+                <div class="progress-bar supplies" id="forgery-supplies" style="width:0%">0%</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar stock" id="forgery-stock" style="width:0%">0%</div>
+            </div>
+            <button onclick="sell('forgery')">Sell</button>
+            <button onclick="restock('forgery')">Restock</button>
         </div>
     </div>
-    
-    <!-- Repeat the above div for each business -->
-</div>
+
+	<div class="dropdown" id="weed">
+        
+        	<div class="dropdown-content" id="weed-content">
+           	 <p>Weed Farm</p>
+           	 <div class="progress-container">
+                	<div class="progress-bar supplies" id="weed-supplies" style="width:0%">0%</div>
+           	</div>
+            	<div class="progress-container">
+                	<div class="progress-bar stock" id="weed-stock" style="width:0%">0%</div>
+           	 </div>
+           	 <button onclick="sell('weed')">Sell</button>
+            	<button onclick="restock('weed')">Restock</button>
+        	</div>
+    	</div>
+
+	<div class="dropdown" id="cash">
+        
+        <div class="dropdown-content" id="cash-content">
+            <p>Counterfeit Cash</p>
+            <div class="progress-container">
+                <div class="progress-bar supplies" id="cash-supplies" style="width:0%">0%</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar stock" id="cash-stock" style="width:0%">0%</div>
+            </div>
+            <button onclick="sell('cash')">Sell</button>
+            <button onclick="restock('cash')">Restock</button>
+        </div>
+    </div>
+
+	<div class="dropdown" id="meth">
+        
+        <div class="dropdown-content" id="meth-content">
+            <p>Meth Lab</p>
+            <div class="progress-container">
+                <div class="progress-bar supplies" id="meth-supplies" style="width:0%">0%</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar stock" id="meth-stock" style="width:0%">0%</div>
+            </div>
+            <button onclick="sell('meth')">Sell</button>
+            <button onclick="restock('meth')">Restock</button>
+        </div>
+    </div>
+
+	<div class="dropdown" id="coke">
+        
+        <div class="dropdown-content" id="coke-content">
+            <p>Coke Lockup</p>
+            <div class="progress-container">
+                <div class="progress-bar supplies" id="coke-supplies" style="width:0%">0%</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar stock" id="coke-stock" style="width:0%">0%</div>
+            </div>
+            <button onclick="sell('coke')">Sell</button>
+            <button onclick="restock('coke')">Restock</button>
+        </div>
+    </div>
+</section>
+
 <script src="script.js"></script>
 </body>
 </html>
