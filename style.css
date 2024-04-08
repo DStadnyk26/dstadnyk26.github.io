@@ -1,48 +1,41 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #121212 url('pattern-background.jpg');
-    color: #fff;
+body {
+    background-color: #282828;
 }
 
-header, .banner, .dropdown-container {
-    background-color: #333;
+.header {
+
 }
 
-.banner img {
-    max-width: 100%;
-    height: auto;
+.banner {
+
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
+button.controls {
+
 }
 
-.progress-container {
-    background-color: #444;
-    border-radius: 5px;
-    margin: 10px 0;
+.collapsible {
+    padding: 18px;
+    width: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    font-size: 30px;
+    font-align: left;
 }
 
-.progress-bar {
-    text-align: right;
-    padding: 2px 5px;
-    border-radius: 5px;
-    color: white;
+.forgery-content {
+    background-color: #484848;
+    padding: 0 16px;
+    display: none;
+    overflow: hidden;
+    
 }
 
-.supplies {
-    background-color: #ff00ff; /* Neon Pink for Supplies */
+.stock-bar {
+
 }
 
-.stock {
-    background-color: #00ff00; /* Neon Green for Stock */
-}
+.supplies-bar {
 
-/* Add additional styling as needed */
+}
