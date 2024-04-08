@@ -1,5 +1,4 @@
 let running = false;
-let forgeryExpanded = false;
 
 function toggleCollapsible(let name) {
     if(document.getElementById(name).style.display == "none") {
