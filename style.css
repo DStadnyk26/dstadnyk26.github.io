@@ -1,41 +1,42 @@
-body {
-    background-color: #282828;
+div.gallery {
+    border: 1px solid #ccc;
 }
 
-.header {
-
+div.gallery:hover {
+    border: 1px solid #777;
 }
 
-.banner {
-
-}
-
-button.controls {
-
-}
-
-.collapsible {
-    padding: 18px;
+div.gallery img {
     width: 100%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: white;
-    font-size: 30px;
-    font-align: left;
+    height: auto;
 }
 
-.forgery-content {
-    background-color: #484848;
-    padding: 0 16px;
-    display: none;
-    overflow: hidden;
-    
+* {
+    box-sizing: border-box;
 }
 
-.stock-bar {
-
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
 }
 
-.supplies-bar {
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
 
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 }
