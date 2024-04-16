@@ -63,12 +63,13 @@ h1 {
     }
     
     h1 {
-        font-size: 18vw;
+        font-size: 14vw;
     }
     
     .bridge {
-        font-size: 12vw;
-        border-radius: 3vw;
+        font-size: 10vw;
+        border-radius: 6vw;
+        border: solid;
         padding: 3vw;
         margin: 5vw 25vw 5vw 25vw;
     }
