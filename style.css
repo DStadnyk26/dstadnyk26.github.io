@@ -1,6 +1,9 @@
 body {
+    height: 100%;
+    margin: 0;
     background: linear-gradient(#923993, #50D8D7) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     font-family: gill sans, sans-serif;
     color: black;
     text-align: center;
