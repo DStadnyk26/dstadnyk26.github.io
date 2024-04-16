@@ -9,6 +9,13 @@ body {
     text-align: center;
 }
 
+.bridge {
+    background-color: white;
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
 #logo {
     width: 25vw;
     border-radius: 12.5vw;
@@ -19,12 +26,51 @@ h1 {
 }
 
 .bridge {
-    background-color: white;
     font-size: 16vw;
     border-radius: 3vw;
     padding: 3vw;
-    display: block;
-    text-align: center;
     margin: 5vw 37.5vw 5vw 37.5vw;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Ipads & Tablets */
+    
+    #logo {
+        width: 50vw;
+        border-radius: 25vw;
+    }
+    
+    h1 {
+        font-size: 18vw;
+    }
+    
+    .bridge {
+        font-size: 12vw;
+        border-radius: 3vw;
+        padding: 3vw;
+        margin: 5vw 25vw 5vw 25vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    /* Phones */
+    
+    #logo {
+        width: 50vw;
+        border-radius: 25vw;
+    }
+    
+    h1 {
+        font-size: 18vw;
+    }
+    
+    .bridge {
+        font-size: 12vw;
+        border-radius: 3vw;
+        padding: 3vw;
+        margin: 5vw 25vw 5vw 25vw;
+    }
 }
 
