@@ -10,21 +10,21 @@ body {
 }
 
 #logo {
-    width: 25%;
-    border-radius: 12.5%
+    width: 25vw;
+    border-radius: 12.5vw;
 }
 
 h1 {
-    font-size: 12.5%;
+    font-size: 24vw;
 }
 
 .bridge {
     background-color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 10px;
+    font-size: 16vw;
+    border-radius: 3vw;
+    padding: 3vw;
     display: block;
     text-align: center;
-    margin: 25px 37.5% 25px 37.5%;
+    margin: 5vw 37.5vw 5vw 37.5vw;
 }
 
