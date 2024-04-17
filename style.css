@@ -17,19 +17,22 @@ body {
 
 @media (min-width: 1024px) {
 #logo {
+    margin: 10vw 0 0 0;
     width: 25vw;
     border-radius: 12.5vw;
 }
 
 h1 {
-    font-size: 24vw;
+    font-size: 12vw;
 }
 
 .bridge {
-    font-size: 16vw;
-    border-radius: 3vw;
-    padding: 3vw;
-    margin: 5vw 37.5vw 5vw 37.5vw;
+    font-size: 4vw;
+    border-radius: 6vw;
+    padding: 6vw;
+    height: 10vw;
+    width: 20vw;
+    margin: 5vw 40vw 5vw 40vw;
 }
 
 }
