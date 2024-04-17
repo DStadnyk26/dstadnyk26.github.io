@@ -41,19 +41,22 @@ h1 {
     /* Ipads & Tablets */
     
     #logo {
-        width: 50vw;
-        border-radius: 25vw;
+        width: 25vw;
+        border-radius: 12.5vw;
+        margins: 10vw 0 0 0;
     }
     
     h1 {
-        font-size: 18vw;
+        font-size: 12vw;
     }
     
     .bridge {
-        font-size: 12vw;
-        border-radius: 3vw;
-        padding: 3vw;
-        margin: 5vw 25vw 5vw 25vw;
+        font-size: 4vw;
+        border-radius: 6vw;
+        padding: 6vw;
+        height: 10vw;
+        width: 20vw;
+        margin: 5vw 40vw 5vw 40vw;
     }
 }
 
